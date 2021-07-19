@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8">
+	<title>Tìm kiếm việc làm cho sinh viên</title>
+  <link rel="stylesheet" type="text/css" href="css/mucLuong.css">
+  <link rel="stylesheet" href="font-awesome-4.7.0\css\font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <style type="text/css" media="screen">
+    /* body {
+          background-image: url("images/nen.png");
+          background-repeat: repeat;
+        } */
+        
+  </style> 
+
+  <!-- menu -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <!-- banner -->
+    <link rel="stylesheet" href="library/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="library/owlcarousel/assets/owl.theme.default.min.css">
+
+    <script src="library/jquery-3.6.0.min.js"></script>
+    <script src="library/owlcarousel/owl.carousel.min.js"></script>
+
+</head>
+<body id="chinh" data-spy="scroll" data-target=".navbar" data-offset="60" >
+  <br><br>
+  <!-- menu -->
+  <nav class="navbar navbar-fixed-top " style="width: 100%;">
+    <div class="nemu row" style="background: #fafafa;  border-bottom: 2px solid rgb(155, 154, 154);" >
+      <div class="navbar-header navbar-left col-md-3">
+        <a class="navbar-brand col-xs-8" href="index.html">
+          <img src="images/lg.png" class="anh_menu">
+        </a>
+        <button type="button" class="navbar-toggle col-xs-auto" data-toggle="collapse" data-target="#myNavbar" >
+          <span class="icon-bar" ></span>
+          <span class="icon-bar" ></span>
+          <span class="icon-bar" ></span>                 
+        </button> 
+      </div>
+      <div class="collapse navbar-collapse col-md-auto " id="myNavbar" style="background: #fafafa;">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="m"><a href="index.html" ><b>TRANG CHỦ</b></a></li>
+          <li class="m"><a href="Cacnhatuyendung.html" ><b>NHÀ TUYỂN DỤNG</b></a></li>
+          <li class="m"><a href="vieclam.html"><b>VIỆC LÀM</b></a></li>
+          <li class="m dropdown-submenu">
+              <a class="test dropdown-toggle" type="button" data-toggle="dropdown" tabindex="-1" href="#" ><b>KHU VỰC</b> <span class="caret"></span></a>
+              <!-- menu con sổ xuống cấp 1 -->
+                <ul class="dropdown-menu">
+                  <li><a tabindex="-1" href="Q.HaiChau.html">Hải Châu</a></li>
+                  <li><a tabindex="-1" href="Q.CamLe.html">Cẩm Lệ</a></li>
+                  <li><a tabindex="-1" href="Q.ThanhKhe.html">Thanh Khê</a></li>
+                  <li><a tabindex="-1" href="Q.LienChieu.html">Liên Chiểu</a></li>
+                  <li><a tabindex="-1" href="Q.NHS.html">Ngũ Hành Sơn</a></li>
+                  <li><a tabindex="-1" href="Q.SonTra.html">Sơn Trà</a></li>
+                 </ul>
+            </li>
+          <li class="m"><a href="#chinh"><b>MỨC LƯƠNG</b></a></li>
+
+          <li id="nav">
+            <button class="nav1" type="submit" title="Đăng nhập nhà tuyển dụng" ><a href="LoGIn 2.html" >&ensp;&ensp;Nhà tuyển dụng</a></button>
+            <button class="nav2" type="submit" href="#" title="Thông báo" >
+              <i class="fa fa-bell" aria-hidden="true" ></i>
+            </button>
+            <button class="nav3" type="submit" href="#" title="Tiếng việt" >
+              <i class="fa fa-language" aria-hidden="true" ></i>
+            </button>
+            <button type="button" class="btn nav4 btn-info"><a href="LogIn.html" style="color: #000; text-decoration: none;"> <i class="fa fa-user-circle-o" aria-hidden="true"></i> Đăng nhâp/Đăng ký</a></button>
+
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+    <!-- tra cuu -->
+    <div id="tracuu" >
+        <div class=" slideanim" id="bn" >
+          <div style="margin-left: 10%; z-index: 2; position: absolute;">
+            <br>
+            <br>
+              <h2><b style="color: #f5b70c;">Tra cứu thông tin mức lương</b></h2>
+              <p>Tiện ích tra cứu &amp; tìm hiểu mức lương theo công việc</p>
+            
+            <div class="row">
+              <form >
+                <div class="col-md-5" >
+                  <select class="col1" style="width: 100%; height: 40px">
+                    <option value="1">Chọn vị trí chức vụ</option>
+                    <option value="2">gia sư cấp 1</option>
+                    <option value="2">gia sư cấp 2</option>
+                    <option value="2">gia sư cấp 3</option>
+                    <option value="3">Phục vụ quán <b> coffee</b></option>
+                    <option value="4">Phục vụ quán <b>nhậu</b></option>
+                    <option value="5">pha chế thức uống</option>
+                    <option value="6">Bảo vệ</option>
+                    <option value="7">Bán hàng</option>
+                    <option value="8">Giao hàng</option>
+                  </select>
+                </div>
+                <div class="col-md-4">
+                  <select class="col2" style=" height: 40px">
+                    <option>Hải Châu</option>
+                    <option>Cẩm Lệ</option>  
+                    <option>Thanh Khê</option>
+                    <option>Liên Chiểu</option>
+                    <option>Ngũ Hành Sơn</option>
+                    <option>Sơn Trà</option>
+    
+                  </select>
+                </div>
+                <div class="col-md-3">
+                  <a href="#">
+                    <button type="submit" style="color: white; height: 40px; background: #ffbd06; border: none; border-radius: 5px;">Tra cứu lương</button>
+                  </a>
+                </div>
+              </form>
+            </div>
+          </div>
+          <img src="images/kv.png" style="width: 100%; height: 400px; z-index: 1;">
+        </div>
+      </div>
+
+      <div class="than">
+        <br><br>
+        <div class="than1">
+            <img class="anhML" src="images/mucluong.png" align="right"/>
+          <p>
+            Với dữ liệu được tổng hợp từ hàng trăm ngàn công việc
+             được đăng tuyển trên hệ thống '<b>Student JOB</b>' kết hợp với thông tin lương do người dùng cung cấp, 
+             tiện ích tra cứu mức lương giúp bạn trả lời các câu hỏi sau:
+          </p>
+          <p class="y"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> Bạn có đang nhận mức lương cạnh tranh?</p>
+          <p class="y"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> Hiểu rõ hơn lộ trình thăng tiến lương thưởng trong ngành nghề của bạn.</p>
+          <p class="y"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> Đánh giá mức lương khi được mời nhận việc.</p>
+
+          <p>
+            Kết hợp cùng với các bài chia sẻ kinh nghiệm trả lời phỏng vấn, 
+            gợi ý cách thương lượng mức lương thưởng, 
+            SJob mong muốn các bạn ứng viên có được mức lương tốt nhất cho năng lực của mình.
+          </p>
+
+          <p>
+            Với các công ty, tiện ích tra cứu lương giúp bộ phận nhân sự và quản lý có được cái nhìn tổng quan về mức lương trên thị trường, 
+            từ đó có thể đưa ra mức lương hợp lý và cạnh tranh cho vị trí tuyển dụng của mình.
+          </p>
+          <br>
+          <h4 class="y"><b>HƯỚNG DẪN TRA CỨU MỨC LƯƠNG</b></h4>
+          <p>
+            Thông tin yêu cầu bắt buộc là tên việc làm, 
+            bạn cần nhập tên việc làm để lấy kết quả mức lương cho vị trí công việc này.
+          </p>
+          <p class="y"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> Bước 1: Nhập tên (vị trí) công việc.</p>
+          <p class="y"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> Bước 2: Chọn địa điểm theo công việc.</p>
+          <p class="y"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> Bước 3: Tra cứu lương.</p>
+
+          <p>
+            Ví dụ: Bạn muốn tra cứu lương của vị trí việc làm 'gia sư cấp 1' 
+            thuộc ngành gia sư bạn nhập công việc mong muốn là "gia sư cấp 1" 
+            chọn địa điểm "Hải Châu" và bắt đầu tra cứu mức lương.
+          </p>
+        </div>
+        
+        <div class="than2">
+          <div class="tde">
+            <h3><b>ĐỀ XUẤT VIỆC LÀM</b></h3>
+          </div>
+          <div class="ndung row">
+             
+              <div class="muc col-md-5 col-xs-12">
+                <a href="#">
+                  <img src="images/vincom.png" class="col-md-3 col-xs-4" />
+                </a>
+                <div class="col-md-9 col-xs-8">
+                  <a href="#">
+                    <h5><b>BẢO VỆ </b><img src="images/new.gif" class="fa-pull-right"/></h5>
+                  </a>
+                  <a href="#">
+                    <p class="ct">Vincom</p>
+                  </a>
+                  <p class="luong"><i class="fa fa-usd" aria-hidden="true"> Lương: 3tỷ</i></p>
+                  <p class="ct"><i class="fa fa-map-marker" aria-hidden="true"> Quận Hải Châu: 10/05/2021 </i></p>
+                </div>
+              </div>
+
+              <div class="muc col-md-5 col-xs-12">
+                <a href="#">
+                  <img src="images/vincom.png" class="col-md-3 col-xs-4" />
+                </a>
+                <div class="col-md-9 col-xs-8">
+                  <a href="#">
+                    <h5><b>BẢO VỆ </b><img src="images/new.gif" class="fa-pull-right"/></h5>
+                  </a>
+                  <a href="#">
+                    <p class="ct">Vincom</p>
+                  </a>
+                  <p class="luong"><i class="fa fa-usd" aria-hidden="true"> Lương: 3tỷ</i></p>
+                  <p class="ct"><i class="fa fa-map-marker" aria-hidden="true"> Quận Hải Châu: 10/05/2021 </i></p>
+                </div>
+              </div>
+
+              <div class="muc col-md-5 col-xs-12">
+                <a href="#">
+                  <img src="images/vincom.png" class="col-md-3 col-xs-4" />
+                </a>
+                <div class="col-md-9 col-xs-8">
+                  <a href="#">
+                    <h5><b>BẢO VỆ </b><img src="images/new.gif" class="fa-pull-right"/></h5>
+                  </a>
+                  <a href="#">
+                    <p class="ct">Vincom</p>
+                  </a>
+                  <p class="luong"><i class="fa fa-usd" aria-hidden="true"> Lương: 3tỷ</i></p>
+                  <p class="ct"><i class="fa fa-map-marker" aria-hidden="true"> Quận Hải Châu: 10/05/2021 </i></p>
+                </div>
+              </div>
+
+              <div class="muc col-md-5 col-xs-12">
+                <a href="#">
+                  <img src="images/vincom.png" class="col-md-3 col-xs-4" />
+                </a>
+                <div class="col-md-9 col-xs-8">
+                  <a href="#">
+                    <h5><b>BẢO VỆ </b><img src="images/new.gif" class="fa-pull-right"/></h5>
+                  </a>
+                  <a href="#">
+                    <p class="ct">Vincom</p>
+                  </a>
+                  <p class="luong"><i class="fa fa-usd" aria-hidden="true"> Lương: 3tỷ</i></p>
+                  <p class="ct"><i class="fa fa-map-marker" aria-hidden="true"> Quận Hải Châu: 10/05/2021 </i></p>
+                </div>
+              </div>
+
+              <div class="muc col-md-5 col-xs-12">
+                <a href="#">
+                  <img src="images/vincom.png" class="col-md-3 col-xs-4" />
+                </a>
+                <div class="col-md-9 col-xs-8">
+                  <a href="#">
+                    <h5><b>BẢO VỆ </b><img src="images/new.gif" class="fa-pull-right"/></h5>
+                  </a>
+                  <a href="#">
+                    <p class="ct">Vincom</p>
+                  </a>
+                  <p class="luong"><i class="fa fa-usd" aria-hidden="true"> Lương: 3tỷ</i></p>
+                  <p class="ct"><i class="fa fa-map-marker" aria-hidden="true"> Quận Hải Châu: 10/05/2021 </i></p>
+                </div>
+              </div>
+
+              <div class="muc col-md-5 col-xs-12">
+                <a href="#">
+                  <img src="images/vincom.png" class="col-md-3 col-xs-4" />
+                </a>
+                <div class="col-md-9 col-xs-8">
+                  <a href="#">
+                    <h5><b>BẢO VỆ </b><img src="images/new.gif" class="fa-pull-right"/></h5>
+                  </a>
+                  <a href="#">
+                    <p class="ct">Vincom</p>
+                  </a>
+                  <p class="luong"><i class="fa fa-usd" aria-hidden="true"> Lương: 3tỷ</i></p>
+                  <p class="ct"><i class="fa fa-map-marker" aria-hidden="true"> Quận Hải Châu: 10/05/2021 </i></p>
+                </div>
+              </div>
+
+              <div class="muc col-md-5 col-xs-12">
+                <a href="#">
+                  <img src="images/vincom.png" class="col-md-3 col-xs-4" />
+                </a>
+                <div class="col-md-9 col-xs-8">
+                  <a href="#">
+                    <h5><b>BẢO VỆ </b><img src="images/new.gif" class="fa-pull-right"/></h5>
+                  </a>
+                  <a href="#">
+                    <p class="ct">Vincom</p>
+                  </a>
+                  <p class="luong"><i class="fa fa-usd" aria-hidden="true"> Lương: 3tỷ</i></p>
+                  <p class="ct"><i class="fa fa-map-marker" aria-hidden="true"> Quận Hải Châu: 10/05/2021 </i></p>
+                </div>
+              </div>
+
+              <div class="muc col-md-5 col-xs-12">
+                <a href="#">
+                  <img src="images/vincom.png" class="col-md-3 col-xs-4" />
+                </a>
+                <div class="col-md-9 col-xs-8">
+                  <a href="#">
+                    <h5><b>BẢO VỆ </b><img src="images/new.gif" class="fa-pull-right"/></h5>
+                  </a>
+                  <a href="#">
+                    <p class="ct">Vincom</p>
+                  </a>
+                  <p class="luong"><i class="fa fa-usd" aria-hidden="true"> Lương: 3tỷ</i></p>
+                  <p class="ct"><i class="fa fa-map-marker" aria-hidden="true"> Quận Hải Châu: 10/05/2021 </i></p>
+                </div>
+              </div>
+              
+            
+          </div>
+        </div>
+      </div>
+
+        
+
+
+
+  
+  <!-- footer -->
+  <div id="footer">
+    <div style="margin: 50px 50px 0px 50px;">
+    <div id="t" >
+      <div class="std col-md-2" >
+        <h4>Student job</h4> 
+        <ul>
+          <li><a href="#">Về Student JOB</a></li>
+          <li><a href="#">Liên Hệ</a></li>
+          <li><a href="#">Góc Báo Chí</a></li>
+          <li><a href="#">Hỏi Đáp</a></li>
+          <li><a href="#">Thỏa Thuận Sử Dụng</a></li>
+          <li><a href="#">Quy Định Bảo Mật</a></li>
+          <li><a href="#">Ứng Dụng Di Động</a></li>
+        </ul>
+      </div >
+      <div class="ntd col-md-2" >
+        <h4>Dành cho nhà tuyển dụng</h4>
+        <ul>
+          <li><a href="">Đăng Tuyển Dụng</a></li>
+          <li><a href="">Tìm Kiếm Hồ Sơ</a></li>
+          <li><a href="">Sản Phẩm Dịch Vụ</a></li>
+          <li><a href="">liên Hệ</a></li>
+        </ul>
+      </div>
+      <div class="khv col-md-3" >
+        <h4>Việc làm theo khu vực ở Đà nẵng</h4>
+        <ul>
+          <li><a href="Q.HaiChau.html">Quận Hải Châu</a></li>
+          <li><a href="Q.CamLe.html">Quận Cẩm Lệ</a></li>
+          <li><a href="Q.ThanhKhe.html">Quận Thanh Khê</a></li>
+          <li><a href="Q.LienChieu.html">Quận Liên Chiểu</a></li>
+          <li><a href="Q.NHS.html">Quận Ngũ Hành Sơn</a></li>
+          <li><a href="Q.SonTra.html">Quận Sơn Trà</a></li>
+        </ul>
+      </div>
+      <div class="nn col-md-2" >
+        <h4>Làm việc theo ngành nghề</h4>
+        <ul>
+          <li><a href="giaSu.html">Gia Sư</a></li>
+          <li><a href="phucVu.html">Phục Vụ</a></li>
+          <li><a href="">Pha Chế</a></li>
+          <li><a href="">Bảo Vệ</a></li>
+        </ul>
+      </div>
+      <div class="ud_cn col-md-2" >
+        <h4>Ứng dụng di động</h4>
+        <a href="#" ><img class="apps" src="images/app.png" ></a>
+        <a href="#" ><img class="ch" src="images/ch.png" ></a>
+        <br><br><br>
+
+        <h4>Chứng nhận bởi</h4>
+        <a href="#" ><img class="bct" src="images/ddk.png" ></a>
+      </div>
+    </div>
+    
+    <div class="GT" >
+      <!-- <center>
+        Đinh Lâm Nghĩa 20it228, &ensp;Bùi Thị Thuỳ Uyên 20it242, &ensp;Văn Công Trường Thọ 20it240 <br>
+        Trường Đại Học CNTT & TT Việt-Hàn - Đại Học ĐÀ NẴNG
+      </center> -->
+    </div>
+    <hr width="100%" style="background: #d0d0d0; height: 2px;">
+
+    <div class="end row" >
+      <div class="icon_logo col-md-3" ><a href="#chinh"><img src="images/logo22.png" ></a>
+      </div>
+      <div class="ul_li col-md-8 col-xs-8 fa-pull-right" >
+        <ul>
+          <li class="li"><a href="">Thỏa thuận sử dụng</a></li>
+          <li class="li"><a href="">Quy định bảo mật</a></li>
+          <li class="li"><a href="">Sơ đồ trang web</a></li>
+          <li class="li"><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+          <!-- <li class="li"><a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a></li> -->
+        </ul>
+      </div>
+    </div>
+    </div>
+  </div>
+
+<style>
+  .fb-livechat, .fb-widget{
+    display: none;
+  }
+  .ctrlq.fb-button, .ctrlq.fb-close{
+    position: fixed; 
+    right: 24px; 
+    cursor: pointer
+    }
+    .ctrlq.fb-button{
+      z-index: 999; 
+      background: url('images/mess.png')
+      center no-repeat #ffffff; 
+      width: 60px; 
+      height: 60px; 
+      text-align: center; 
+      bottom: 15px; 
+      border: 0; 
+      outline: 0; 
+      border-radius: 60px; 
+      -webkit-border-radius: 60px; 
+      -moz-border-radius: 60px; 
+      -ms-border-radius: 60px; 
+      -o-border-radius: 60px; 
+      box-shadow: 0 1px 6px rgba(0, 0, 0, .06), 0 2px 32px rgba(0, 0, 0, .16); 
+      -webkit-transition: box-shadow .2s ease; 
+      background-size: 80%; 
+      transition: all .2s ease-in-out
+    }
+    .ctrlq.fb-button:focus, .ctrlq.fb-button:hover{
+      transform: scale(1.1); 
+      box-shadow: 0 2px 8px rgba(0, 0, 0, .09), 0 4px 40px rgba(0, 0, 0, .24)
+    }
+    .fb-widget{
+      background: #fff; 
+      z-index: 1000; 
+      position: fixed; 
+      width: 290px; 
+      height: 350px; 
+      overflow: hidden; 
+      opacity: 0; 
+      bottom: 0; 
+      right: 24px; 
+      border-radius: 6px; 
+      -o-border-radius: 6px; 
+      -webkit-border-radius: 
+      6px; box-shadow: 0 5px 40px rgba(0, 0, 0, .16); 
+      -webkit-box-shadow: 0 5px 40px rgba(0, 0, 0, .16); 
+      -moz-box-shadow: 0 5px 40px rgba(0, 0, 0, .16); 
+      -o-box-shadow: 0 5px 40px rgba(0, 0, 0, .16)
+    }
+    .fb-credit{
+      text-align: center; 
+      margin-top: 8px
+    }
+    .fb-credit a{
+      transition: none; 
+      color: #bec2c9; 
+      font-family: Helvetica, Arial, sans-serif; 
+      font-size: 12px; 
+      text-decoration: none; 
+      border: 0; 
+      font-weight: 400
+    }
+    .ctrlq.fb-overlay{
+      z-index: 0; 
+      position: fixed; 
+      height: 100vh; 
+      width: 100vw; 
+      -webkit-transition: opacity .4s, visibility .4s; 
+      transition: opacity .4s, visibility .4s; 
+      top: 0; 
+      left: 0; 
+      background: rgba(0, 0, 0, .05); 
+      display: none
+    }
+    .ctrlq.fb-close{
+      z-index: 4; 
+      padding: 0 6px; 
+      background: #365899; 
+      font-weight: 700; 
+      font-size: 11px; 
+      color: #fff; 
+      margin: 8px; 
+      border-radius: 3px
+    }
+    .ctrlq.fb-close::after{
+      content: "X"; 
+      font-family: sans-serif
+    }
+    .bubble{
+      width: 20px; 
+      height: 20px; 
+      background: #c00; 
+      color: #fff; 
+      position: absolute; 
+      z-index: 999999999; 
+      text-align: center; 
+      vertical-align: middle; 
+      top: -2px; 
+      left: -5px; 
+      border-radius: 50%;
+    }
+    .bubble-msg{
+      width: 120px; 
+      left: -140px; 
+      top: 5px; 
+      position: relative; 
+      background: rgba(59, 89, 152, .8); 
+      color: #fff; 
+      padding: 5px 8px; 
+      border-radius: 8px; 
+      text-align: center; 
+      font-size: 13px;
+    }
+    </style>
+    <div class="fb-livechat"> 
+      <div class="ctrlq fb-overlay"></div>
+      <div class="fb-widget"> 
+        <div class="ctrlq fb-close"></div>
+        <div class="fb-page" data-href="https://www.facebook.com/bttu1225" data-tabs="messages" data-width="360" data-height="400" data-small-header="true" data-hide-cover="true" data-show-facepile="false"> </div>
+        <div class="fb-credit"> 
+          <a href="https://www.facebook.com/bttu1225" target="_blank" >Bùi Thị Thuy Uyên</a> 
+          <br>
+          
+        </div>
+        <div id="fb-root"></div>
+      </div>
+      <a href="https://m.me/bttu1225" title="Gửi tin nhắn cho chúng tôi qua Facebook" class="ctrlq fb-button"> 
+        <div class="bubble">1</div>
+        <div class="bubble-msg">Bạn cần hỗ trợ?</div>
+      </a>
+    </div>
+    <!-- <script src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9"></script> -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
+    <script>
+      jQuery(document).ready(function($){
+        function detectmob(){
+          if( navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/BlackBerry/i) || navigator.userAgent.match(/Windows Phone/i) )
+            {return true;}
+          else{return false;}
+        }
+        var t={delay: 125, overlay: $(".fb-overlay"), widget: $(".fb-widget"), button: $(".fb-button")}; 
+        setTimeout(function(){$("div.fb-livechat").fadeIn()}, 8 * t.delay); 
+        if(!detectmob()){
+          $(".ctrlq").on("click", function(e){
+            e.preventDefault(), t.overlay.is(":visible") ? (t.overlay.fadeOut(t.delay), t.widget.stop().animate({
+              bottom: 0, opacity: 0
+            }, 2 * t.delay, function(){
+              $(this).hide("slow"), t.button.show()
+            })) : t.button.fadeOut("medium", function(){
+              t.widget.stop().show().animate({bottom: "30px", opacity: 1}, 2 * t.delay), t.overlay.fadeIn(t.delay)
+            })})}});
+    </script>
+
+    <!-- scolltop -->
+    <script type="text/javascript">
+        $().ready(function() {
+            $(window).scroll(function() {
+                var top = $(this).scrollTop();
+                if (top > 100) {
+                    $("#top").fadeIn('slow');
+                } else {
+                    $("#top").fadeOut('slow');
+                }
+            });
+            $("#top").click(function() {
+                $("body").animate({
+                    scrollTop: 0
+                }, 1000);
+            });
+        });
+    </script>
+    <style type="text/css">
+        #top {
+            position: fixed;
+            right: 15px;
+            bottom: 90px;
+            display: none;
+        }
+    </style>
+    <a href="#chinh" id="top"><img src="images/sct.png" width="80px" title="Trở về đầu trang" /></a>
+
+    <script>
+    $(document).ready(function(){
+      // Add smooth scrolling to all links in navbar + footer link
+      $(".navbar a, a, footer a[href='#chinh']").on('click', function(event) {
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 700, function(){
+       
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+      
+      $(window).scroll(function() {
+        $(".slideanim").each(function(){
+          var pos = $(this).offset().top;
+
+          var winTop = $(window).scrollTop();
+            if (pos < winTop + 600) {
+              $(this).addClass("slide");
+            }
+        });
+      });
+    })
+  </script>
+ </body>
+</html>

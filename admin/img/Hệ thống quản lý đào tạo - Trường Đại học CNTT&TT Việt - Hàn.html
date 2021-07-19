@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<!-- saved from url=(0036)http://daotao.vku.udn.vn/sv/lich-hoc -->
+<html lang="en" class=" "><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <!-- Meta, title, CSS, favicons, etc. -->
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Hệ thống quản lý đào tạo - Trường Đại học CNTT&amp;TT Việt - Hàn</title>
+
+	<link href="./Hệ thống quản lý đào tạo - Trường Đại học CNTT&amp;TT Việt - Hàn_files/css2" rel="stylesheet">   
+    <!-- Bootstrap -->
+    <link href="./Hệ thống quản lý đào tạo - Trường Đại học CNTT&amp;TT Việt - Hàn_files/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="./Hệ thống quản lý đào tạo - Trường Đại học CNTT&amp;TT Việt - Hàn_files/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="./Hệ thống quản lý đào tạo - Trường Đại học CNTT&amp;TT Việt - Hàn_files/nprogress.css" rel="stylesheet">
+    <!-- iCheck -->
+    <link href="./Hệ thống quản lý đào tạo - Trường Đại học CNTT&amp;TT Việt - Hàn_files/green.css" rel="stylesheet">
+	
+    <!-- bootstrap-progressbar -->
+    <link href="./Hệ thống quản lý đào tạo - Trường Đại học CNTT&amp;TT Việt - Hàn_files/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
+    <!-- JQVMap -->
+    <link href="./Hệ thống quản lý đào tạo - Trường Đại học CNTT&amp;TT Việt - Hàn_files/jqvmap.min.css" rel="stylesheet">
+    <!-- bootstrap-daterangepicker -->
+    <link href="./Hệ thống quản lý đào tạo - Trường Đại học CNTT&amp;TT Việt - Hàn_files/daterangepicker.css" rel="stylesheet">
+    <!-- Datatables -->
+    <link href="./Hệ thống quản lý đào tạo - Trường Đại học CNTT&amp;TT Việt - Hàn_files/dataTables.bootstrap.min.css" rel="stylesheet">
+    <link href="./Hệ thống quản lý đào tạo - Trường Đại học CNTT&amp;TT Việt - Hàn_files/buttons.bootstrap.min.css" rel="stylesheet">
+    <link href="./Hệ thống quản lý đào tạo - Trường Đại học CNTT&amp;TT Việt - Hàn_files/fixedHeader.bootstrap.min.css" rel="stylesheet">
+    <link href="./Hệ thống quản lý đào tạo - Trường Đại học CNTT&amp;TT Việt - Hàn_files/responsive.bootstrap.min.css" rel="stylesheet">
+    <link href="./Hệ thống quản lý đào tạo - Trường Đại học CNTT&amp;TT Việt - Hàn_files/scroller.bootstrap.min.css" rel="stylesheet">
+
+    <!-- jquery -->
+    <script src="./Hệ thống quản lý đào tạo - Trường Đại học CNTT&amp;TT Việt - Hàn_files/jquery-3.2.1.min.js.download"></script>
+    <script src="./Hệ thống quản lý đào tạo - Trường Đại học CNTT&amp;TT Việt - Hàn_files/jquery.min.js.download"></script>
+    <!-- Custom Theme Style -->
+    <link href="./Hệ thống quản lý đào tạo - Trường Đại học CNTT&amp;TT Việt - Hàn_files/custom.min.css" rel="stylesheet">
+      <!-- <meta name="csrf-token" content="So2CuzFebJVi17J7AvH2xAZTNXCoMmHN9lkigyyM" /> -->
+  </head>
+
+  <body class="nav-md">
+    <div class="container body">
+      <div class="main_container">
+        <div class="col-md-3 left_col">
+          <div class="left_col scroll-view">
+            <div class="navbar nav_title" style="border: 0;">
+              <a href="http://daotao.vku.udn.vn/" class="site_title"><i class="fa fa-university"></i> <span>VKU!</span></a>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <!-- menu profile quick info -->
+            <div class="profile clearfix">
+              <div class="profile_pic">
+                <img src="./Hệ thống quản lý đào tạo - Trường Đại học CNTT&amp;TT Việt - Hàn_files/img.jpg" alt="..." class="img-circle profile_img">
+              </div>
+              <div class="profile_info">
+                <span>Xin chào,</span>
+				                <h2 title="bttuyen.20it5@vku.udn.vn 0767747690">Bùi Thị Thùy  Uyên</h2>
+				              </div>
+            </div>
+            <!-- /menu profile quick info -->
+
+            <br>
+
+            <!-- sidebar menu -->
+            <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+              <div class="menu_section active">
+                               <h3>TUẦN HỌC THỨ 37</h3>
+                <ul class="nav side-menu" style="">
+                  
+                  <li title="bttuyen.20it5@vku.udn.vn"><a href="http://daotao.vku.udn.vn/sv/lich-hoc#"><i class="fa fa-street-view"></i>Lý lịch sinh viên</a>
+                  </li>
+				   <li class="active"><a href="http://daotao.vku.udn.vn/sv/lich-hoc#"><i class="fa fa-calendar"></i>Thời khóa biểu</a>
+				  <ul class="nav child_menu" style="display: block;">
+					 
+                  <li><a href="http://daotao.vku.udn.vn/sv/tkb"><i class="fa fa-clock-o"></i>Lịch học theo tuần</a>
+                  </li><li class="current-page"><a href="http://daotao.vku.udn.vn/sv/lich-hoc"><i class="fa fa-calendar-o"></i>Lịch học chi tiết</a>
+                  </li><li><a href="http://daotao.vku.udn.vn/sv/lich-thi"><i class="fa fa-calendar-o"></i>Thời khóa biểu toàn khóa</a>
+				  
+				  
+				  </li></ul>
+				  
+                  </li>
+				  
+				  <li><a href="http://daotao.vku.udn.vn/sv/lich-hoc#"><i class="fa fa-plus-circle"></i>Đăng ký tín chỉ</a>
+				  <ul class="nav child_menu">
+					  <li><a href="http://daotao.vku.udn.vn/sv/dang-ky-tin-chi"><i class="fa fa-bookmark"></i>Đăng ký khối lượng</a></li>
+					  <li><a href="http://daotao.vku.udn.vn/sv/dang-ky-hoc-ghep"><i class="fa fa-signal"></i>Đăng ký học ghép</a> </li>
+					  <li><a href="http://daotao.vku.udn.vn/sv/xac-nhan-hoc"><i class="fa fa-book"></i>Xác nhận khối lượng</a></li>
+				  </ul>  
+                  
+                  </li>
+				   <li><a href="http://daotao.vku.udn.vn/sv/lich-hoc#"><i class="fa fa-inbox"></i>Lớp học phần</a>
+				    <ul class="nav child_menu">
+					 <li><a href="http://daotao.vku.udn.vn/sv/lop-hoc-phan"><i class="fa fa-table"></i> Lớp học phần</a></li>
+					 <li><a href="http://elearning.vku.udn.vn/my/"><i class="fa fa-university"></i>Truy cập Elearning</a></li>
+                    </ul>
+                  </li>
+				  <li><a href="http://daotao.vku.udn.vn/sv/do-an-cua-toi"><i class="fa fa-calendar"></i>Lớp đồ án</a>
+                  </li>
+				  
+				   <li><a href="http://daotao.vku.udn.vn/sv/lich-hoc#"><i class="fa fa-phone"></i>Danh bạ điện thoại</a>
+				    <ul class="nav child_menu">
+                  <li><a href="http://daotao.vku.udn.vn/sv/lienheGV"><i class="fa fa-users"></i>Liên hệ Giảng viên</a></li>
+                  <li><a href="http://daotao.vku.udn.vn/sv/lich-hoc#"><i class="fa fa-phone"></i>Danh bạ sinh viên</a></li>
+				  </ul>
+				  </li>
+				  <li><a href="http://daotao.vku.udn.vn/sv/lich-hoc#"><i class="fa fa-print"></i>Kết quả học tập</a>
+				    <ul class="nav child_menu">
+					
+					 <li><a href="http://daotao.vku.udn.vn/sv/diem"><i class="fa fa-bookmark"></i> Điểm học phần</a></li>
+				  <li><a href="http://daotao.vku.udn.vn/sv/xet-hoc-vu/ky-hoc?"><i class="fa fa-user"></i>Kết quả xét học vụ</a></li>
+					</ul>
+					</li>
+				  <li><a href="http://daotao.vku.udn.vn/sv/lich-hoc#"><i class="fa fa-money"></i>Học phí</a>
+				    <ul class="nav child_menu">
+					
+					 <li><a href="http://daotao.vku.udn.vn/sv/hoc-phi"><i class="fa fa-credit-card"></i>Học phí đã nộp</a></li>
+					  <li><a href="http://daotao.vku.udn.vn/sv/xac-nhan-hoc"><i class="fa fa-book"></i>Học phí sắp tới</a></li>
+					</ul>
+					</li>
+				  
+				  <li><a href="http://daotao.vku.udn.vn/sv/lich-hoc#"><i class="fa fa-commenting"></i>Khảo sát ý kiến</a>
+				    <ul class="nav child_menu">
+						<li><a href="http://daotao.vku.udn.vn/sv/khao-sat-hoc-phan"><i class="fa fa-university"></i>Đánh giá chương trình</a> </li>
+						<li><a href="http://daotao.vku.udn.vn/sv/diem"><i class="fa fa-users"></i>Đánh giá lớp học phần</a> </li>
+						<li><a href="http://daotao.vku.udn.vn/sv/khao-sat-chuyen-nganh"><i class="fa fa-bar-chart"></i>Đăng ký chuyên ngành</a> </li>
+						<li><a href="http://daotao.vku.udn.vn/sv/khao-sat-mo-lop"><i class="fa fa-folder-open-o"></i>Khảo sát mở lớp</a> </li>
+						<li><a href="http://daotao.vku.udn.vn/sv/khao-sat-viec-lam"><i class="fa fa-table"></i>Khảo sát việc làm thêm</a> </li>
+					</ul>
+					</li>
+					
+				 
+				  
+                
+                </ul>
+              </div>
+            </div>
+            <!-- /sidebar menu -->
+
+            <!-- /menu footer buttons -->
+            <div class="sidebar-footer hidden-small">
+              <!-- <a data-toggle="tooltip" data-placement="top" title="Settings">
+                <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="FullScreen">
+                <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="Lock">
+                <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="Logout" href="login.html">
+                <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+              </a> -->
+            </div>
+            <!-- /menu footer buttons -->
+          </div>
+        </div>
+
+        <!-- top navigation -->
+        <div class="top_nav">
+          <div class="nav_menu">
+            <nav>
+
+              <div class="nav toggle">
+                <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+              </div>
+
+              <ul class="nav navbar-nav navbar-right">
+                <li class="">
+                  <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <img src="./Hệ thống quản lý đào tạo - Trường Đại học CNTT&amp;TT Việt - Hàn_files/img.jpg" alt="">Bùi Thị Thùy  Uyên - 20IT242
+                    <!-- <span class=" fa fa-angle-down"></span> -->
+                  </a>
+                  
+                  <ul class="dropdown-menu dropdown-usermenu pull-right">
+                  
+                    <li><a href="http://daotao.vku.udn.vn/sv/logout/"><i class="fa fa-sign-out pull-right"></i> Thoát</a></li>
+                  </ul>
+                  
+                </li>
+				
+				<li class="">
+                  <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    					Học kỳ 1 - 2020-2021
+					                    <span class=" fa fa-angle-down"></span> 
+                  </a>
+                  
+                  <ul class="dropdown-menu dropdown-usermenu pull-right">
+                    
+                  					
+                    <li><a href="http://daotao.vku.udn.vn/sv/doi-hoc-ky?id=2"> Học kỳ 2 - 2020-2021</a></li>
+					                  </ul>
+                  
+                </li>
+				
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <!-- /top navigation -->
+
+        <!-- page content -->
+
+          <!-- top tiles -->
+        <div class="right_col" role="main" style="min-height: 1129px;">
+          <div class="">
+            <div class="row">
+            
+  
+    <!-- page content -->
+	
+        <!-- top tiles -->
+         <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="x_panel">
+                <div class="x_title">
+                    <h2>Thời khóa biểu Học kỳ 2, năm học 2020 - 2021
+					</h2>
+                    <div class="clearfix"></div>
+                </div>
+								        </div>
+		
+                <div class="x_content">
+                    <p></p>
+										
+		<div class="alert alert-success today">
+		  <strong>Lịch học ngày hôm nay</strong> 
+		</div>
+		<div class="table-responsive today">
+                        <table class="table table-striped jambo_table bulk_action">
+				<thead>
+				<tr class="headings">
+					<th class="column-title hidden-xs"># </th>
+					<th class="column-title">Tên lớp học phần </th>
+					<th class="column-title">Giáo viên</th>
+					<th class="column-title">Tuần</th>
+					<th class="column-title">Phòng</th>
+					<th class="column-title">Thứ</th>
+					<th class="column-title">Tiết</th>
+				</tr>
+				</thead>
+
+				<tbody>
+																			
+																									
+																																								
+															
+											<tr class="even pointer">
+							<td align="center" class="hidden-xs">1</td>
+							<td class=" ">
+															 							<a href="http://daotao.vku.udn.vn/sv/lich-trinh-giang-day/2411"><img src="./Hệ thống quản lý đào tạo - Trường Đại học CNTT&amp;TT Việt - Hàn_files/new.gif"> <span style="color:red">NGHỈ HỌC</span> Kiến trúc máy tính (2)</a></td>
+							<td align="left" class=" ">TS. Nguyễn Hà Huy Cường</td>
+							<td align="left" class=" ">
+							
+<b>30-&gt;40</b>. Còn <b style="color: red">3</b> tuần nữa									</td>
+							<td align="left" class=" "><b>K.A105</b></td>
+							<td align="left" class=" "><b>Năm</b></td>
+							<td align="left" class=" "><b>1-&gt;2</b></td>
+							
+						</tr>
+																									
+																									
+																				
+											<tr class="even pointer">
+							<td align="center" class="hidden-xs">2</td>
+							<td class=" ">
+															 							<a href="http://daotao.vku.udn.vn/sv/lich-trinh-giang-day/2615">Tiếng Anh 2 (13)</a></td>
+							<td align="left" class=" ">ThS. Lê Thị Kim Tuyến</td>
+							<td align="left" class=" ">
+							
+<b>30-&gt;44,49</b>									</td>
+							<td align="left" class=" "><b>K.A101</b></td>
+							<td align="left" class=" "><b>Năm</b></td>
+							<td align="left" class=" "><b>6-&gt;7</b></td>
+							
+						</tr>
+															
+															
+					
+									</tbody>
+			</table>
+		
+		</div>
+		</div>
+                <div class="x_content">
+                    <p></p>
+<div class="alert alert-warning">
+		  <strong>Lịch học các ngày khác!</strong> 
+		</div>
+                    <div class="table-responsive">
+                        <table class="table table-striped jambo_table bulk_action">
+                            <thead>
+                            <tr class="headings">
+                                <th class="column-title hidden-xs"># </th>
+                                <th class="column-title">Tên lớp học phần </th>
+                                <th class="column-title">Giáo viên</th>
+                                <th class="column-title">Tuần</th>
+                                <th class="column-title">Phòng</th>
+                                <th class="column-title">Thứ</th>
+                                <th class="column-title">Tiết</th>
+                            </tr>
+                            </thead>
+
+                            <tbody>
+                                                            												
+							
+                                    <tr class="even pointer">
+									<td class="hidden-xs" align="center">
+								1
+								</td>
+				<td class=" ">
+												 																						
+													<a href="http://daotao.vku.udn.vn/sv/lich-trinh-giang-day/2483">Cấu trúc dữ liệu và giải thuật (2)</a>
+													
+												
+													</td>
+																					
+                                        <td align="left" class=" ">TS. Nguyễn Đức Hiển</td>
+                                        <td align="left" class=" ">
+										
+										
+<b>30-&gt;44</b></td>
+                                        <td align="left" class=" "><b>K.A105</b></td>
+                                        <td align="left" class=" "><b>Ba</b></td>
+                                        <td align="left" class=" "><b>8-&gt;9</b></td>
+										
+                                    </tr>
+                                																												
+								<tr style="background: #ddddcb">
+					<td colspan="8"></td>
+				</tr>
+						
+                                    <tr class="even pointer">
+									<td class="hidden-xs" align="center">
+								2
+								</td>
+				<td class=" ">
+												 																						
+													<a href="http://daotao.vku.udn.vn/sv/lich-trinh-giang-day/2747">Công nghệ WEB (2)</a>
+													
+												
+													</td>
+																					
+                                        <td align="left" class=" ">ThS. Nguyễn Văn  Bình</td>
+                                        <td align="left" class=" ">
+										
+										
+<b>30-&gt;44</b></td>
+                                        <td align="left" class=" "><b>K.A105</b></td>
+                                        <td align="left" class=" "><b>Ba</b></td>
+                                        <td align="left" class=" "><b>6-&gt;7</b></td>
+										
+                                    </tr>
+                                																																				
+								<tr style="background: #ddddcb">
+					<td colspan="8"></td>
+				</tr>
+						
+                                    <tr class="even pointer">
+									<td class="hidden-xs" align="center">
+								3
+								</td>
+				<td class=" ">
+												 																						
+													<a href="http://daotao.vku.udn.vn/sv/lich-trinh-giang-day/3072">Đồ án cơ sở 1(1) - lớp IT</a>
+													
+												
+													</td>
+																					
+                                        <td align="left" class=" ">Khoa. K. Khoa học máy tính</td>
+                                        <td align="left" class=" ">
+										
+										
+<b>_</b>. <b style="color:#008000">Lớp đã kết thúc</b></td>
+                                        <td align="left" class=" "><b>_</b></td>
+                                        <td align="left" class=" "><b>_</b></td>
+                                        <td align="left" class=" "><b>_</b></td>
+										
+                                    </tr>
+                                												
+								<tr style="background: #ddddcb">
+					<td colspan="8"></td>
+				</tr>
+						
+                                    <tr class="even pointer">
+									<td class="hidden-xs" align="center">
+								4
+								</td>
+				<td class=" ">
+												 																						
+													<a href="http://daotao.vku.udn.vn/sv/lich-trinh-giang-day/3071">Giáo dục quốc phòng</a>
+													
+												
+													</td>
+																					
+                                        <td align="left" class=" ">ThS. Chuyên viên  Đào tạo</td>
+                                        <td align="left" class=" ">
+										
+										
+<b>45,46,47,48</b></td>
+                                        <td align="left" class=" "><b>_</b></td>
+                                        <td align="left" class=" "><b>Hai</b></td>
+                                        <td align="left" class=" "><b>1-&gt;4</b></td>
+										
+                                    </tr>
+                                												
+								<tr style="background: #ddddcb">
+					<td colspan="8"></td>
+				</tr>
+						
+                                    <tr class="even pointer">
+									<td class="hidden-xs" align="center">
+								5
+								</td>
+				<td class=" ">
+												 																						
+													<a href="http://daotao.vku.udn.vn/sv/lich-trinh-giang-day/3088">Giáo dục thể chất 2 (Nữ 3)</a>
+													
+												
+													</td>
+																					
+                                        <td align="left" class=" ">Khoa. Khoa  GDTC</td>
+                                        <td align="left" class=" ">
+										
+										
+<b>30-&gt;38,40-&gt;44</b></td>
+                                        <td align="left" class=" "><b>K.Sân điền kinh 2</b></td>
+                                        <td align="left" class=" "><b>Bảy</b></td>
+                                        <td align="left" class=" "><b>3-&gt;4</b></td>
+										
+                                    </tr>
+                                																																				
+								<tr style="background: #ddddcb">
+					<td colspan="8"></td>
+				</tr>
+						
+                                    <tr class="even pointer">
+									<td class="hidden-xs" align="center">
+								6
+								</td>
+				<td class=" ">
+												 																						
+													<a href="http://daotao.vku.udn.vn/sv/lich-trinh-giang-day/2346">Lập trình Java nâng cao (2)</a>
+													
+												
+													</td>
+																					
+                                        <td align="left" class=" ">ThS. Lê Thành Công</td>
+                                        <td align="left" class=" ">
+										
+										
+<b>30-&gt;39,41</b>. Còn <b style="color: red">4</b> tuần nữa</td>
+                                        <td align="left" class=" "><b>K.A105</b></td>
+                                        <td align="left" class=" "><b>Hai</b></td>
+                                        <td align="left" class=" "><b>1-&gt;2</b></td>
+										
+                                    </tr>
+                                																												
+								<tr style="background: #ddddcb">
+					<td colspan="8"></td>
+				</tr>
+						
+                                    <tr class="even pointer">
+									<td class="hidden-xs" align="center">
+								7
+								</td>
+				<td class=" ">
+												 																						
+													<a href="http://daotao.vku.udn.vn/sv/lich-trinh-giang-day/2635">Nguyên lý hệ điều hành (2)</a>
+													
+												
+													</td>
+																					
+                                        <td align="left" class=" ">TS. Nguyễn Hà Huy Cường</td>
+                                        <td align="left" class=" ">
+										
+										
+<b>30-&gt;37,39-&gt;43</b></td>
+                                        <td align="left" class=" "><b>K.A307</b></td>
+                                        <td align="left" class=" "><b>Tư</b></td>
+                                        <td align="left" class=" "><b>1-&gt;3</b></td>
+										
+                                    </tr>
+                                																												
+								<tr style="background: #ddddcb">
+					<td colspan="8"></td>
+				</tr>
+						
+                                    <tr class="even pointer">
+									<td class="hidden-xs" align="center">
+								8
+								</td>
+				<td class=" ">
+												 																						
+													<a href="http://daotao.vku.udn.vn/sv/lich-trinh-giang-day/2554">Tiếng Anh chuyên ngành 2 (2)</a>
+													
+												
+													</td>
+																					
+                                        <td align="left" class=" ">ThS. Nguyễn Đỗ Công Pháp</td>
+                                        <td align="left" class=" ">
+										
+										
+<b>30-&gt;44,49</b></td>
+                                        <td align="left" class=" "><b>K.A105</b></td>
+                                        <td align="left" class=" "><b>Ba</b></td>
+                                        <td align="left" class=" "><b>1-&gt;2</b></td>
+										
+                                    </tr>
+                                												
+								<tr style="background: #ddddcb">
+					<td colspan="8"></td>
+				</tr>
+						
+                                    <tr class="even pointer">
+									<td class="hidden-xs" align="center">
+								9
+								</td>
+				<td class=" ">
+												 																						
+													<a href="http://daotao.vku.udn.vn/sv/lich-trinh-giang-day/2681">Vật lý (2)</a>
+													
+												
+													</td>
+																					
+                                        <td align="left" class=" ">ThS. Trần Thị Hương Xuân</td>
+                                        <td align="left" class=" ">
+										
+										
+<b>30-&gt;44,49</b></td>
+                                        <td align="left" class=" "><b>K.A105</b></td>
+                                        <td align="left" class=" "><b>Ba</b></td>
+                                        <td align="left" class=" "><b>3-&gt;4</b></td>
+										
+                                    </tr>
+                                								                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- /top tiles -->
+
+    <!-- /page content -->
+	<script>
+	function SummerizeTable(table) {
+		  $(table).each(function() {
+			$(table).find('td:nth-child(1), td:nth-child(2)').each(function() {
+			  var $this = $(this);
+			  var col = $this.index();
+			  var html = $this.html();
+			  var row = $(this).parent()[0].rowIndex; 
+			  var span = 1;
+			  var cell_above = $($this.parent().prev().children()[col]);
+
+			  // look for cells one above another with the same text
+			  while (cell_above.html() === html) { // if the text is the same
+				span += 1; // increase the span
+				cell_above_old = cell_above; // store this cell
+				cell_above = $(cell_above.parent().prev().children()[col]); // and go to the next cell above
+			  }
+
+			  // if there are at least two columns with the same value, 
+			  // set a new span to the first and hide the other
+			  if (span > 1) {
+				// console.log(span);
+				$(cell_above_old).attr('rowspan', span);
+				$this.hide();
+			  }
+			  
+			});
+		  });
+		}
+	$(document).ready(function(){
+		 SummerizeTable(".table");
+	});
+	</script>
+            </div>
+          </div>
+        </div>
+        <!-- /page content -->
+
+        <!-- footer content -->
+          <footer>
+            <div class="pull-right">
+              ©Bản quyền thuộc về <a href="http://daotao.vku.udn.vn/">Phòng Đào tạo - Trường ĐH CNTT&amp;TT Việt - Hàn</a> - Đại học Đà Nẵng
+            </div>
+            <div class="clearfix"></div>
+          </footer>
+        <!-- /footer content -->
+      </div>
+    
+
+    <!-- jQuery -->
+    <script src="./Hệ thống quản lý đào tạo - Trường Đại học CNTT&amp;TT Việt - Hàn_files/jquery.min.js(1).download"></script>
+    <!-- Bootstrap -->
+    <script src="./Hệ thống quản lý đào tạo - Trường Đại học CNTT&amp;TT Việt - Hàn_files/bootstrap.min.js.download"></script>
+    <!-- FastClick -->
+    <script src="./Hệ thống quản lý đào tạo - Trường Đại học CNTT&amp;TT Việt - Hàn_files/fastclick.js.download"></script>
+    <!-- NProgress -->
+    <script src="./Hệ thống quản lý đào tạo - Trường Đại học CNTT&amp;TT Việt - Hàn_files/nprogress.js.download"></script>
+    <!-- Chart.js -->
+    <script src="./Hệ thống quản lý đào tạo - Trường Đại học CNTT&amp;TT Việt - Hàn_files/Chart.min.js.download"></script>
+    <!-- gauge.js -->
+    <script src="./Hệ thống quản lý đào tạo - Trường Đại học CNTT&amp;TT Việt - Hàn_files/gauge.min.js.download"></script>
+    <!-- bootstrap-progressbar -->
+    <script src="./Hệ thống quản lý đào tạo - Trường Đại học CNTT&amp;TT Việt - Hàn_files/bootstrap-progressbar.min.js.download"></script>
+    <!-- iCheck -->
+    <script src="./Hệ thống quản lý đào tạo - Trường Đại học CNTT&amp;TT Việt - Hàn_files/icheck.min.js.download"></script>
+    <!-- Skycons -->
+    <script src="./Hệ thống quản lý đào tạo - Trường Đại học CNTT&amp;TT Việt - Hàn_files/skycons.js.download"></script>
+    <!-- Flot -->
+    <script src="./Hệ thống quản lý đào tạo - Trường Đại học CNTT&amp;TT Việt - Hàn_files/jquery.flot.js.download"></script>
+    <script src="./Hệ thống quản lý đào tạo - Trường Đại học CNTT&amp;TT Việt - Hàn_files/jquery.flot.pie.js.download"></script>
+    <script src="./Hệ thống quản lý đào tạo - Trường Đại học CNTT&amp;TT Việt - Hàn_files/jquery.flot.time.js.download"></script>
+    <script src="./Hệ thống quản lý đào tạo - Trường Đại học CNTT&amp;TT Việt - Hàn_files/jquery.flot.stack.js.download"></script>
+    <script src="./Hệ thống quản lý đào tạo - Trường Đại học CNTT&amp;TT Việt - Hàn_files/jquery.flot.resize.js.download"></script>
+    <!-- Flot plugins -->
+    <script src="./Hệ thống quản lý đào tạo - Trường Đại học CNTT&amp;TT Việt - Hàn_files/jquery.flot.orderBars.js.download"></script>
+    <script src="./Hệ thống quản lý đào tạo - Trường Đại học CNTT&amp;TT Việt - Hàn_files/jquery.flot.spline.min.js.download"></script>
+    <script src="./Hệ thống quản lý đào tạo - Trường Đại học CNTT&amp;TT Việt - Hàn_files/curvedLines.js.download"></script>
+    <!-- DateJS -->
+    <script src="./Hệ thống quản lý đào tạo - Trường Đại học CNTT&amp;TT Việt - Hàn_files/date.js.download"></script>
+    <!-- JQVMap -->
+    <script src="./Hệ thống quản lý đào tạo - Trường Đại học CNTT&amp;TT Việt - Hàn_files/jquery.vmap.js.download"></script>
+    <script src="./Hệ thống quản lý đào tạo - Trường Đại học CNTT&amp;TT Việt - Hàn_files/jquery.vmap.world.js.download"></script>
+    <script src="./Hệ thống quản lý đào tạo - Trường Đại học CNTT&amp;TT Việt - Hàn_files/jquery.vmap.sampledata.js.download"></script>
+    <!-- bootstrap-daterangepicker -->
+    <script src="./Hệ thống quản lý đào tạo - Trường Đại học CNTT&amp;TT Việt - Hàn_files/moment.min.js.download"></script>
+    <script src="./Hệ thống quản lý đào tạo - Trường Đại học CNTT&amp;TT Việt - Hàn_files/daterangepicker.js.download"></script>
+    <!-- Datatables -->
+    <script src="./Hệ thống quản lý đào tạo - Trường Đại học CNTT&amp;TT Việt - Hàn_files/jquery.dataTables.min.js.download"></script>
+    <script src="./Hệ thống quản lý đào tạo - Trường Đại học CNTT&amp;TT Việt - Hàn_files/dataTables.bootstrap.min.js.download"></script>
+    <script src="./Hệ thống quản lý đào tạo - Trường Đại học CNTT&amp;TT Việt - Hàn_files/dataTables.buttons.min.js.download"></script>
+    <script src="./Hệ thống quản lý đào tạo - Trường Đại học CNTT&amp;TT Việt - Hàn_files/buttons.bootstrap.min.js.download"></script>
+    <script src="./Hệ thống quản lý đào tạo - Trường Đại học CNTT&amp;TT Việt - Hàn_files/buttons.flash.min.js.download"></script>
+    <script src="./Hệ thống quản lý đào tạo - Trường Đại học CNTT&amp;TT Việt - Hàn_files/buttons.html5.min.js.download"></script>
+    <script src="./Hệ thống quản lý đào tạo - Trường Đại học CNTT&amp;TT Việt - Hàn_files/buttons.print.min.js.download"></script>
+    <script src="./Hệ thống quản lý đào tạo - Trường Đại học CNTT&amp;TT Việt - Hàn_files/dataTables.fixedHeader.min.js.download"></script>
+    <script src="./Hệ thống quản lý đào tạo - Trường Đại học CNTT&amp;TT Việt - Hàn_files/dataTables.keyTable.min.js.download"></script>
+    <script src="./Hệ thống quản lý đào tạo - Trường Đại học CNTT&amp;TT Việt - Hàn_files/dataTables.responsive.min.js.download"></script>
+    <script src="./Hệ thống quản lý đào tạo - Trường Đại học CNTT&amp;TT Việt - Hàn_files/responsive.bootstrap.js.download"></script>
+    <script src="./Hệ thống quản lý đào tạo - Trường Đại học CNTT&amp;TT Việt - Hàn_files/dataTables.scroller.min.js.download"></script>
+    <script src="./Hệ thống quản lý đào tạo - Trường Đại học CNTT&amp;TT Việt - Hàn_files/jszip.min.js.download"></script>
+    <script src="./Hệ thống quản lý đào tạo - Trường Đại học CNTT&amp;TT Việt - Hàn_files/pdfmake.min.js.download"></script>
+    <script src="./Hệ thống quản lý đào tạo - Trường Đại học CNTT&amp;TT Việt - Hàn_files/vfs_fonts.js.download"></script>
+
+    <!-- Custom Theme Scripts -->
+    <script src="./Hệ thống quản lý đào tạo - Trường Đại học CNTT&amp;TT Việt - Hàn_files/custom.min.js.download"></script>
+	<!-- Load Facebook SDK for JavaScript -->
+	    
+
+	
+  
+
+</body></html>

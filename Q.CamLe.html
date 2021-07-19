@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quận Cẩm Lệ</title>
+  <link rel="stylesheet" type="text/css" href="css\khuvuc.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0\css\font-awesome.min.css">
+  <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <style type="text/css" media="screen">
+  
+
+    </style>
+
+ <!-- menu -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   <!-- banner -->
+    <link rel="stylesheet" href="library/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="library/owlcarousel/assets/owl.theme.default.min.css">
+
+    <script src="library/jquery-3.6.0.min.js"></script>
+    <script src="library/owlcarousel/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css" rel="stylesheet">  -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body id="chinh" data-spy="scroll" data-target=".navbar" data-offset="60" >
+  <br><br>
+  <!-- menu -->
+  <nav class="navbar navbar-fixed-top " style="width: 100%;">
+    <div class="nemu row" style="background: #fafafa;  border-bottom: 2px solid rgb(155, 154, 154);" >
+      <div class="navbar-header navbar-left col-md-3">
+        <a class="navbar-brand col-xs-8" href="index.html">
+          <img src="images/lg.png" class="anh_menu">
+        </a>
+        <button type="button" class="navbar-toggle col-xs-auto" data-toggle="collapse" data-target="#myNavbar" >
+          <span class="icon-bar" ></span>
+          <span class="icon-bar" ></span>
+          <span class="icon-bar" ></span>                 
+        </button> 
+      </div>
+      <div class="collapse navbar-collapse col-md-auto " id="myNavbar" style="background: #fafafa;">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="m"><a href="index.html" ><b>TRANG CHỦ</b></a></li>
+          <li class="m"><a href="Cacnhatuyendung.html" ><b>NHÀ TUYỂN DỤNG</b></a></li>
+          <li class="m"><a href="vieclam.html"><b>VIỆC LÀM</b></a></li>
+          <li class="m dropdown-submenu">
+              <a class="test dropdown-toggle" type="button" data-toggle="dropdown" tabindex="-1" href="#" style="color: #000; background: #ffffff;border-bottom: 3px solid #ffae00;"><b>KHU VỰC</b> <span class="caret"></span></a>
+              <!-- menu con sổ xuống cấp 1 -->
+                <ul class="dropdown-menu">
+                  <li><a tabindex="-1" href="Q.HaiChau.html">Hải Châu</a></li>
+                  <li><a tabindex="-1" href="Q.CamLe.html" style="color: #ffae00;">Cẩm Lệ</a></li>
+                  <li><a tabindex="-1" href="Q.ThanhKhe.html">Thanh Khê</a></li>
+                  <li><a tabindex="-1" href="Q.LienChieu.html">Liên Chiểu</a></li>
+                  <li><a tabindex="-1" href="Q.NHS.html">Ngũ Hành Sơn</a></li>
+                  <li><a tabindex="-1" href="Q.SonTra.html">Sơn Trà</a></li>
+                 </ul>
+            </li>
+          <li class="m"><a href="mucLuong.html"><b>MỨC LƯƠNG</b></a></li>
+
+          <li id="nav">
+            <button class="nav1" type="submit" title="Đăng nhập nhà tuyển dụng" ><a href="LoGIn 2.html" >&ensp;&ensp;Nhà tuyển dụng</a></button>
+            <button class="nav2" type="submit" href="#" title="Thông báo" >
+              <i class="fa fa-bell" aria-hidden="true" ></i>
+            </button>
+            <button class="nav3" type="submit" href="#" title="Tiếng việt" >
+              <i class="fa fa-language" aria-hidden="true" ></i>
+            </button>
+            <button type="button" class="btn nav4 btn-info"><a href="LogIn.html" style="color: #000; text-decoration: none;"> <i class="fa fa-user-circle-o" aria-hidden="true"></i> Đăng nhâp/Đăng ký</a></button>
+
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  
+  <!-- banner -->
+  <div id="banner">
+    <script>
+        $(document).ready(function(){
+          $('.owl-carousel').owlCarousel({
+            items:1,
+            loop:true,
+            margin:10,
+            autoplay:true,
+            autoplayTimeout:2000,
+            autoplayHoverPause:true
+          });
+        });
+    </script>
+    <div id="slide">
+      <script src="js/jquery-1.11.1.min.js">
+          function toggleChevron(e) { 
+            $(e.target)     .prev('.panel-heading') 
+              .find("i.indicator")    
+              .toggleClass('fa-caret-down fa-caret-right');   
+            }   
+ 
+            $('#accordion').on('hidden.bs.collapse', toggleChevron);    
+              $('#accordion').on('shown.bs.collapse', toggleChevron);
+      </script>
+      <!-- Set up your HTML -->
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <img src="image\camle.jpg">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid"> 
+ <h1 class="text-center">Quận Cẩm Lệ</h1>
+ 
+ <div class="row">     
+  <!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:50px">
+
+  <!-- Header -->
+  <header id="portfolio">
+    <a href="#"></a>
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <div class="w3-container">
+    </div>
+  </header>
+  <div class="col-xs-12 col-sm-3">         
+   <div id="accordion" class="panel panel-primary behclick-panel">             
+    <div class="panel-heading">                    
+     <h3 class="panel-title">Bộ lọc</h3>             
+    </div>             
+    <div class="panel-body">                   
+     <div class="panel-heading ">                      
+      <h4 class="panel-title">                         <a data-toggle="collapse" href="https://hocwebgiare.com/#collapse0">                                <i class="indicator fa fa-caret-down" aria-hidden="true"></i> <b>Loại việc làm </b>                         </a>                        
+      </h4>                    
+     </div>                    
+     <div id="collapse0" class="panel-collapse collapse in" >                       
+      <ul class="list-group">                          
+       <li class="list-group-item">                                
+        <div class="checkbox">                                 <label>                                     <input type="checkbox" value="">                                        Việc làm sau Đại Học                                   </label>                                
+        </div>                         
+       </li>                           
+       <li class="list-group-item">                                
+        <div class="checkbox">                                 <label>                                     <input type="checkbox" value="">                                        Việc làm bán thời gian                                   </label>                                
+        </div>                         
+       </li>                           
+       <li class="list-group-item">                                
+        <div class="checkbox">                                 <label>                                     <input type="checkbox" value="">                                        Việc làm toàn thời gian                                   </label>                                
+        </div>                         
+       </li>                           
+       <li class="list-group-item">                                
+        <div class="checkbox">                                 <label>                                     <input type="checkbox" value="">                                        Thỏa thuận thời gian                                   </label>                                
+        </div>                         
+       </li>
+       <li class="list-group-item">                                
+        <div class="checkbox">                                 <label>                                     <input type="checkbox" value="">                                        Làm theo ca                                   </label>                                
+        </div>                         
+       </li>                       
+      </ul>                    
+     </div>
+     <div class="panel-heading ">                      
+      <h4 class="panel-title">                         <a data-toggle="collapse" href="https://hocwebgiare.com/#collapse1">                                <i class="indicator fa fa-caret-down" aria-hidden="true"></i> <b>Loại công việc </b>                        </a>                        
+      </h4>                    
+     </div>                    
+     <div id="collapse1" class="panel-collapse collapse in">                       
+      <ul class="list-group">                          
+       <li class="list-group-item">                                
+        <div class="checkbox">                                 <label>                                     <input type="checkbox" value="">                                        Gia sư                                  </label>                                
+        </div>                         
+       </li>                           
+       <li class="list-group-item">                                
+        <div class="checkbox">                                 <label>                                     <input type="checkbox" value="">                                        Phục vụ                                    </label>                                
+        </div>                         
+       </li>                           
+       <li class="list-group-item">                                
+        <div class="checkbox">                                 <label>                                     <input type="checkbox" value="">                                        Bán hàng                                 </label>                                
+        </div>                         
+       </li>
+       <li class="list-group-item">                                
+        <div class="checkbox">                                 <label>                                     <input type="checkbox" value="">                                        Bảo vệ                                 </label>                                
+        </div>                         
+       </li>
+       <li class="list-group-item">                                
+        <div class="checkbox">                                 <label>                                     <input type="checkbox" value="">                                        Nhân viên                                 </label>                                
+        </div>                         
+       </li>                       
+      </ul>                    
+     </div>                    
+     <div class="panel-heading">                       
+      <h4 class="panel-title">                         <a data-toggle="collapse" href="https://hocwebgiare.com/#collapse3"><i class="indicator fa fa-caret-down" aria-hidden="true"></i><b> Trình độ giáo dục</b></a>                       
+      </h4>                    
+     </div>                    
+     <div id="collapse3" class="panel-collapse collapse in">                       
+      <ul class="list-group">                          
+       <li class="list-group-item">                                
+        <div class="checkbox">                                 <label>                                     <input type="checkbox" value="">                                        Cao đẳng                                 </label>                                
+        </div>                         
+       </li>                           
+       <li class="list-group-item">                                
+        <div class="checkbox">                                 <label>                                     <input type="checkbox" value="">                                        Đại học                                   </label>                                
+        </div>                         
+       </li>                           
+       <li class="list-group-item">                                
+        <div class="checkbox">                                 <label>                                     <input type="checkbox" value="">                                        Khác                                    </label>                                
+        </div>                         
+       </li>                       
+      </ul>                    
+     </div>                    
+     <div class="panel-heading">                       
+      <h4 class="panel-title">                         <a data-toggle="collapse" href="https://hocwebgiare.com/#collapse2"><i class="indicator fa fa-caret-down" aria-hidden="true"></i> <b>Ngôn ngữ</b></a>                     
+      </h4>                    
+     </div>                    
+     <div id="collapse2" class="panel-collapse collapse in">               
+      <ul class="list-group">                          
+       <li class="list-group-item">                                
+        <div class="checkbox">                                 <label>                                     <input type="checkbox" value="">                                        Tiếng Anh                                   </label>                                
+        </div>                         
+       </li>                           
+       <li class="list-group-item">                                
+        <div class="checkbox">                                 <label>                                     <input type="checkbox" value="">                                        Tiếng Đức                                   </label>                                
+        </div>                         
+       </li>                           
+       <li class="list-group-item">                                
+        <div class="checkbox">                                 <label>                                     <input type="checkbox" value="">                                        Tiếng Trung                                   </label>                                
+        </div>                         
+       </li>
+       <li class="list-group-item">                                
+        <div class="checkbox">                                 <label>                                     <input type="checkbox" value="">                                        Tiếng Pháp                                   </label>                                
+        </div>                         
+       </li>                       
+      </ul>                    
+     </div>
+    <button class="button">ÁP DỤNG BỘ LỌC</button>
+    <a href=""><span style="color: black">Xóa Bộ Lọc</span></a>
+    </div>         
+   </div>      
+  </div>   
+  <!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:100%;display: none!important; margin-top: -400px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove" style="color:white;"></i>
+    </a>
+     <div class="col-xs-12 col-sm-3" >         
+   <div id="accordion" class="panel panel-primary behclick-panel1">             
+    <div class="panel-heading">                    
+     <h3 class="panel-title">Bộ lọc</h3>             
+    </div>             
+    <div class="panel-body">                   
+     <div class="panel-heading ">                      
+      <h4 class="panel-title">                         <a data-toggle="collapse" href="https://hocwebgiare.com/#collapse0">                                <i class="indicator fa fa-caret-down" aria-hidden="true"></i> <b>Loại việc làm </b>                         </a>                        
+      </h4>                    
+     </div>                    
+     <div id="collapse0" class="panel-collapse collapse in" >                       
+      <ul class="list-group">                          
+       <li class="list-group-item">                                
+        <div class="checkbox">                                 <label>                                     <input type="checkbox" value="">                                        Việc làm sau Đại Học                                   </label>                                
+        </div>                         
+       </li>                           
+       <li class="list-group-item">                                
+        <div class="checkbox">                                 <label>                                     <input type="checkbox" value="">                                        Việc làm bán thời gian                                   </label>                                
+        </div>                         
+       </li>                           
+       <li class="list-group-item">                                
+        <div class="checkbox">                                 <label>                                     <input type="checkbox" value="">                                        Việc làm toàn thời gian                                   </label>                                
+        </div>                         
+       </li>                           
+       <li class="list-group-item">                                
+        <div class="checkbox">                                 <label>                                     <input type="checkbox" value="">                                        Thỏa thuận thời gian                                   </label>                                
+        </div>                         
+       </li>
+       <li class="list-group-item">                                
+        <div class="checkbox">                                 <label>                                     <input type="checkbox" value="">                                        Làm theo ca                                   </label>                                
+        </div>                         
+       </li>                       
+      </ul>                    
+     </div>
+     <div class="panel-heading ">                      
+      <h4 class="panel-title">                         <a data-toggle="collapse" href="https://hocwebgiare.com/#collapse1">                                <i class="indicator fa fa-caret-down" aria-hidden="true"></i> <b>Loại công việc </b>                        </a>                        
+      </h4>                    
+     </div>                    
+     <div id="collapse1" class="panel-collapse collapse in">                       
+      <ul class="list-group">                          
+       <li class="list-group-item">                                
+        <div class="checkbox">                                 <label>                                     <input type="checkbox" value="">                                        Gia sư                                  </label>                                
+        </div>                         
+       </li>                           
+       <li class="list-group-item">                                
+        <div class="checkbox">                                 <label>                                     <input type="checkbox" value="">                                        Phục vụ                                    </label>                                
+        </div>                         
+       </li>                           
+       <li class="list-group-item">                                
+        <div class="checkbox">                                 <label>                                     <input type="checkbox" value="">                                        Bán hàng                                 </label>                                
+        </div>                         
+       </li>
+       <li class="list-group-item">                                
+        <div class="checkbox">                                 <label>                                     <input type="checkbox" value="">                                        Bảo vệ                                 </label>                                
+        </div>                         
+       </li>
+       <li class="list-group-item">                                
+        <div class="checkbox">                                 <label>                                     <input type="checkbox" value="">                                        Nhân viên                                 </label>                                
+        </div>                         
+       </li>                       
+      </ul>                    
+     </div>                    
+     <div class="panel-heading">                       
+      <h4 class="panel-title">                         <a data-toggle="collapse" href="https://hocwebgiare.com/#collapse3"><i class="indicator fa fa-caret-down" aria-hidden="true"></i><b> Trình độ giáo dục</b></a>                       
+      </h4>                    
+     </div>                    
+     <div id="collapse3" class="panel-collapse collapse in">                       
+      <ul class="list-group">                          
+       <li class="list-group-item">                                
+        <div class="checkbox">                                 <label>                                     <input type="checkbox" value="">                                        Cao đẳng                                 </label>                                
+        </div>                         
+       </li>                           
+       <li class="list-group-item">                                
+        <div class="checkbox">                                 <label>                                     <input type="checkbox" value="">                                        Đại học                                   </label>                                
+        </div>                         
+       </li>                           
+       <li class="list-group-item">                                
+        <div class="checkbox">                                 <label>                                     <input type="checkbox" value="">                                        Khác                                    </label>                                
+        </div>                         
+       </li>                       
+      </ul>                    
+     </div>                    
+     <div class="panel-heading">                       
+      <h4 class="panel-title">                         <a data-toggle="collapse" href="https://hocwebgiare.com/#collapse2"><i class="indicator fa fa-caret-down" aria-hidden="true"></i> <b>Ngôn ngữ</b></a>                     
+      </h4>                    
+     </div>                    
+     <div id="collapse2" class="panel-collapse collapse in">               
+      <ul class="list-group">                          
+       <li class="list-group-item">                                
+        <div class="checkbox">                                 <label>                                     <input type="checkbox" value="">                                        Tiếng Anh                                   </label>                                
+        </div>                         
+       </li>                           
+       <li class="list-group-item">                                
+        <div class="checkbox">                                 <label>                                     <input type="checkbox" value="">                                        Tiếng Đức                                   </label>                                
+        </div>                         
+       </li>                           
+       <li class="list-group-item">                                
+        <div class="checkbox">                                 <label>                                     <input type="checkbox" value="">                                        Tiếng Trung                                   </label>                                
+        </div>                         
+       </li>
+       <li class="list-group-item">                                
+        <div class="checkbox">                                 <label>                                     <input type="checkbox" value="">                                        Tiếng Pháp                                   </label>                                
+        </div>                         
+       </li>                       
+      </ul>                    
+     </div>
+    <button class="button">ÁP DỤNG BỘ LỌC</button>
+    <a href=""><span style="color: black">Xóa Bộ Lọc</span></a>
+    </div>         
+   </div>      
+  </div>  
+  </div>
+</nav>
+
+
+
+
+  <script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>   
+  <div class="col-xs-12 col-sm-9" col-xs-12="" col-sm-9=""> 
+  <p class="text-right">
+    <div class="col-sm-4 slideanim">
+          <div class="thumbnail" style="background-color: #EEEEEE;">
+            <img src="image\npp.gif" align="left">
+            <h4><b>Tuyển dụng nhân viên tư vấn chăm sóc khách hàng tại Đà Nẵng</b></h4>
+            <span>NPP SỮA DINH DƯỠNG VIỆT NAM</span><br>
+            <span><i class="fa fa-money" aria-hidden="true"></i>&ensp;Mức lương: Thỏa thuận</span><br>
+            <span><i class="fa fa-id-card-o" aria-hidden="true"></i>&ensp;Kinh nghiệm: không yêu cầu</span><br>
+            <span style="margin-left: 8px"><i class="fa fa-map-marker" aria-hidden="true"></i>&ensp;Nơi làm việc: Đà Nẵng</span><br>
+            <span style="margin-left: 60px"><i class="fa fa-graduation-cap" aria-hidden="true"></i>&ensp;Trình độ: Tất cả</span><br>
+            <span style="margin-left: 64px"><i class="fa fa-suitcase" aria-hidden="true"></i>&ensp;Việc làm toàn thời gian</span><br>
+            <span>Mô tả công việc:</span><br>
+            <span> - Đón tiếp và lắng nghe những nhu cầu của khách mua hàng.</span><br>
+            <span> - Không quên nêu bật tính năng, lợi ích của sản phẩm và so sánh với sản phẩm cùng loại của hãng hàng khác.</span>
+            <br>  
+            <span  ><a href="#" title="">Xem chi tiết</a></span>
+          </div>
+        </div>
+
+        <div class="col-sm-4 slideanim">
+         <div class="thumbnail" style="background-color: #EEEEEE;">   
+            <img src="image\vs.jpg" align="left">
+            <h4><b>Tuyển dụng nhân viên tính kết cấu kỹ thuật các dự án nhôm kính tại Đà Nẵng</b></h4>
+            <span>CÔNG TY CỔ PHẦN VIỆT - SÉC</span><br>
+            <span><i class="fa fa-money" aria-hidden="true"></i>&ensp;Mức lương: 11-13 triệu</span><br>
+            <span><i class="fa fa-id-card-o" aria-hidden="true"></i>&ensp;Kinh nghiệm: 3 năm</span><br>
+            <span style="margin-left: 8px"><i class="fa fa-map-marker" aria-hidden="true"></i>&ensp;Nơi làm việc: Đà Nẵng</span><br>
+            <span style="margin-left: 60px"><i class="fa fa-graduation-cap" aria-hidden="true"></i>&ensp;Trình độ: Tất cả</span><br>
+            <span style="margin-left: 64px"><i class="fa fa-suitcase" aria-hidden="true"></i>&ensp;Việc làm toàn thời gian</span><br>
+            <span>Mô tả công việc:</span><br>
+            <span> - Nhận nhiệm vụ, kế hoạch do cấp trên, trưởng phòng phân công về mảng kết cấu.</span><br>
+            <span> - Hiểu và áp dụng đúng các tiêu chuẩn, quy chuẩn, quy phạm kỹ thuật của Việt Nam và quốc tế .</span>
+            <br>  
+            <span  ><a href="#" title="">Xem chi tiết</a></span>
+          </div>
+        </div>
+
+        <div class="col-sm-4 slideanim">
+          <div class="thumbnail" style="background-color: #EEEEEE;">
+            <img src="image\opt.jpg" align="left">
+            <h4><b>Tuyển dụng nhân viên lao động phổ thông tại Đà Nẵng - Công ty tnhh mtv opt</b></h4>
+            <span>CÔNG TY TNHH MTV OPT</span><br>
+            <span><i class="fa fa-money" aria-hidden="true"></i>&ensp;Mức lương: 6-8 triệu</span><br>
+            <span><i class="fa fa-id-card-o" aria-hidden="true"></i>&ensp;Kinh nghiệm: không yêu cầu</span><br>
+            <span style="margin-left: 60px"><i class="fa fa-map-marker" aria-hidden="true"></i>&ensp;Nơi làm việc: Đà Nẵng</span><br>
+            <span style="margin-left: 57px"><i class="fa fa-graduation-cap" aria-hidden="true"></i>&ensp;Trình độ: Khác</span><br>
+            <span style="margin-left: 64px"><i class="fa fa-suitcase" aria-hidden="true"></i>&ensp;Việc làm toàn thời gian</span><br>
+            <span>Mô tả công việc:</span><br>
+            <span> - Bốc xếp hàng hóa tại công ty.</span><br>
+            <span> - Thực hiện công việc theo sự chỉ đạo cấp trên.</span><br>
+            <span> - Thực hiện công việc theo yêu cầu cấp trên.</span><br>
+            <span> - Làm việc trong môi trường năng động,đầy đủ các trang thiết bị.</span>
+            <br>
+            <span  ><a href="#" title="">Xem chi tiết</a></span>
+          </div>
+        </div>
+
+        <div class="col-sm-4 slideanim">
+          <div class="thumbnail" style="background-color: #EEEEEE;">
+            <img src="image\ks.jpg" align="left">
+            <h4><b>Tuyển dụng kỹ sư kinh doanh</b></h4>
+            <span>CÔNG TY CỔ PHẦN QUỐC TẾ THIỀN SINH THÁI</span><br>
+            <span><i class="fa fa-money" aria-hidden="true"></i>&ensp;Mức lương: 8-12 triệu</span><br>
+            <span><i class="fa fa-id-card-o" aria-hidden="true"></i>&ensp;Kinh nghiệm: 1 năm</span><br>
+            <span style="margin-left: 8px"><i class="fa fa-map-marker" aria-hidden="true"></i>&ensp;Nơi làm việc: Đà Nẵng</span><br>
+            <span style="margin-left: 60px"><i class="fa fa-graduation-cap" aria-hidden="true"></i>&ensp;Trình độ: Cao đẳng</span><br>
+            <span style="margin-left: 64px"><i class="fa fa-suitcase" aria-hidden="true"></i>&ensp;Việc làm toàn thời gian</span><br>
+            <span>Mô tả công việc:</span><br>
+            <span> - Tìm kiếm và phát triển danh sách khách hàng.</span><br>
+            <span> - Liên hệ với khách hàng thông qua các kênh.</span><br>
+            <span> - Lập kế hoạch bán hàng, kế hoạch công tác tuần/ tháng/quý.</span><br>
+            <span> - Hiểu rõ về thông tin về sản phẩm, dịch vụ công ty đang kinh doanh.</span>
+            <br>  
+            <span  ><a href="#" title="">Xem chi tiết</a></span>
+          </div>
+        </div>
+
+        <div class="col-sm-4 slideanim">
+          <div class="thumbnail" style="background-color: #EEEEEE;">
+            <img src="image\vc.jpg" align="left">
+            <h4><b>Tuyển dụng nhân viên kế toán tổng hợp</b></h4>
+            <span>CÔNG TY TNHH KỸ THUẬT VIETCAR</span><br>
+            <span><i class="fa fa-money" aria-hidden="true"></i>&ensp;Mức lương: 7-10 triệu</span><br>
+            <span><i class="fa fa-id-card-o" aria-hidden="true"></i>&ensp;Kinh nghiệm: 1 năm</span><br>
+            <span style="margin-left: 8px"><i class="fa fa-map-marker" aria-hidden="true"></i>&ensp;Nơi làm việc: Đà Nẵng</span><br>
+            <span style="margin-left: 60px"><i class="fa fa-graduation-cap" aria-hidden="true"></i>&ensp;Trình độ: Cao đẳng</span><br>
+            <span style="margin-left: 65px"><i class="fa fa-suitcase" aria-hidden="true"></i>&ensp;Việc làm toàn thời gian</span><br>
+            <span>Mô tả công việc:</span><br>
+            <span> - Quản lý công nợ công ty.</span><br>
+            <span> - Quản lý quỹ tiền mặt, thực hiện báo cáo theo yêu cầu.</span><br>
+            <span> - Quản lý kho: Theo dõi xuất, nhập, tồn.</span><br>
+            <span> - Thực hiện một số công việc hành chính: Tiếp đón khách hàng, chấm công nhân viên....</span>
+            <br>  
+            <span  ><a href="#" title="">Xem chi tiết</a></span>
+          </div>
+        </div>
+
+        <div class="col-sm-4 slideanim">
+          <div class="thumbnail" style="background-color: #EEEEEE;">
+            <img src="image\tm.jpg" align="left">
+            <h4><b> Tuyển dụng nhân viên thợ mộc,phụ mộc</b></h4>
+            <span>CÔNG TY TNHH MTV CTO</span><br>
+            <span><i class="fa fa-money" aria-hidden="true"></i>&ensp;Mức lương: 9-12 triệu</span><br>
+            <span><i class="fa fa-id-card-o" aria-hidden="true"></i>&ensp;Kinh nghiệm: 1 năm</span><br>
+            <span style="margin-left: 8px"><i class="fa fa-map-marker" aria-hidden="true"></i>&ensp;Nơi làm việc: Đà Nẵng</span><br>
+            <span style="margin-left: -2px"><i class="fa fa-graduation-cap" aria-hidden="true"></i>&ensp;Trình độ: Khác</span><br>
+            <span style="margin-left: 60px"><i class="fa fa-suitcase" aria-hidden="true"></i>&ensp;Việc làm toàn thời gian</span><br>
+            <span>Mô tả công việc:</span><br> 
+            <span> - Thi công đồ gỗ nội thất.</span><br>
+            <span> - Làm phụ mộc.</span><br>
+            <span> - Làm việc tại phân xưởng công ty.</span><br>
+            <span> - Thực hiện công việc theo yêu cầu cấp trên.</span><br>
+            <span> - Làm việc trong môi trường năng động,đầy đủ các trang thiết bị.</span>
+            <br>  
+            <span  ><a href="#" title="">Xem chi tiết</a></span>
+          </div>
+        </div>
+
+        
+   </p> 
+  </div> 
+ </div> 
+</div>
+<div align="center">
+<a href="#" style="text-decoration: none;"><span style="font-size: 20px; color: #ff7f00">&ensp;1&ensp;</span></a>
+<a href="Q.CamLe1.html" style="text-decoration: none;"><span style="font-size: 20px">&ensp;2&ensp;</span></a>
+<a href="#" style="text-decoration: none;"><span style="font-size: 20px">&ensp;3&ensp;</span></a>
+<a href="#" style="text-decoration: none;"><span style="font-size: 20px">&ensp;...&ensp;</span></a>
+<button class="button button2"><a href="Q.CamLe1.html" style="text-decoration: none;"><i class="fa fa-chevron-right" aria-hidden="true"></i></a></button>
+</div>
+
+<!-- footer -->
+<div id="footer">
+  <div style="margin: 50px 50px 0px 50px;">
+  <div id="t" >
+    <div class="std col-md-2" >
+      <h4>Student job</h4> 
+      <ul>
+        <li><a href="#">Về Student JOB</a></li>
+        <li><a href="#">Liên Hệ</a></li>
+        <li><a href="#">Góc Báo Chí</a></li>
+        <li><a href="#">Hỏi Đáp</a></li>
+        <li><a href="#">Thỏa Thuận Sử Dụng</a></li>
+        <li><a href="#">Quy Định Bảo Mật</a></li>
+        <li><a href="#">Ứng Dụng Di Động</a></li>
+      </ul>
+    </div >
+    <div class="ntd col-md-2" >
+      <h4>Dành cho nhà tuyển dụng</h4>
+      <ul>
+        <li><a href="">Đăng Tuyển Dụng</a></li>
+        <li><a href="">Tìm Kiếm Hồ Sơ</a></li>
+        <li><a href="">Sản Phẩm Dịch Vụ</a></li>
+        <li><a href="">liên Hệ</a></li>
+      </ul>
+    </div>
+    <div class="khv col-md-3" >
+      <h4>Việc làm theo khu vực ở Đà nẵng</h4>
+      <ul>
+        <li><a href="Q.HaiChau.html">Quận Hải Châu</a></li>
+        <li><a href="Q.CamLe.html">Quận Cẩm Lệ</a></li>
+        <li><a href="Q.ThanhKhe.html">Quận Thanh Khê</a></li>
+        <li><a href="Q.LienChieu.html">Quận Liên Chiểu</a></li>
+        <li><a href="Q.NHS.html">Quận Ngũ Hành Sơn</a></li>
+        <li><a href="Q.SonTra.html">Quận Sơn Trà</a></li>
+      </ul>
+    </div>
+    <div class="nn col-md-2" >
+      <h4>Làm việc theo ngành nghề</h4>
+      <ul>
+        <li><a href="giaSu.html">Gia Sư</a></li>
+        <li><a href="phucVu.html">Phục Vụ</a></li>
+        <li><a href="">Pha Chế</a></li>
+        <li><a href="">Bảo Vệ</a></li>
+      </ul>
+    </div>
+    <div class="ud_cn col-md-2" >
+      <h4>Ứng dụng di động</h4>
+      <a href="#" ><img class="apps" src="images/app.png" ></a>
+      <a href="#" ><img class="ch" src="images/ch.png" ></a>
+      <br><br><br>
+
+      <h4>Chứng nhận bởi</h4>
+      <a href="#" ><img class="bct" src="images/ddk.png" ></a>
+    </div>
+  </div>
+  
+  <div class="GT" >
+    <!-- <center>
+      Đinh Lâm Nghĩa 20it228, &ensp;Bùi Thị Thuỳ Uyên 20it242, &ensp;Văn Công Trường Thọ 20it240 <br>
+      Trường Đại Học CNTT & TT Việt-Hàn - Đại Học ĐÀ NẴNG
+    </center> -->
+  </div>
+  <hr width="100%" style="background: #d0d0d0; height: 2px;">
+
+  <div class="end row" >
+    <div class="icon_logo col-md-3" ><a href="#chinh"><img src="images/logo22.png" ></a>
+    </div>
+    <div class="ul_li col-md-8 col-xs-8 fa-pull-right" >
+      <ul>
+        <li class="li"><a href="">Thỏa thuận sử dụng</a></li>
+        <li class="li"><a href="">Quy định bảo mật</a></li>
+        <li class="li"><a href="">Sơ đồ trang web</a></li>
+        <li class="li"><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+        <!-- <li class="li"><a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a></li> -->
+      </ul>
+    </div>
+  </div>
+  </div>
+</div>
+
+<style>
+  .fb-livechat, .fb-widget{
+    display: none;
+  }
+  .ctrlq.fb-button, .ctrlq.fb-close{
+    position: fixed; 
+    right: 24px; 
+    cursor: pointer
+    }
+    .ctrlq.fb-button{
+      z-index: 999; 
+      background: url('images/mess.png')
+      center no-repeat #ffffff; 
+      width: 60px; 
+      height: 60px; 
+      text-align: center; 
+      bottom: 15px; 
+      border: 0; 
+      outline: 0; 
+      border-radius: 60px; 
+      -webkit-border-radius: 60px; 
+      -moz-border-radius: 60px; 
+      -ms-border-radius: 60px; 
+      -o-border-radius: 60px; 
+      box-shadow: 0 1px 6px rgba(0, 0, 0, .06), 0 2px 32px rgba(0, 0, 0, .16); 
+      -webkit-transition: box-shadow .2s ease; 
+      background-size: 80%; 
+      transition: all .2s ease-in-out
+    }
+    .ctrlq.fb-button:focus, .ctrlq.fb-button:hover{
+      transform: scale(1.1); 
+      box-shadow: 0 2px 8px rgba(0, 0, 0, .09), 0 4px 40px rgba(0, 0, 0, .24)
+    }
+    .fb-widget{
+      background: #fff; 
+      z-index: 1000; 
+      position: fixed; 
+      width: 290px; 
+      height: 350px; 
+      overflow: hidden; 
+      opacity: 0; 
+      bottom: 0; 
+      right: 24px; 
+      border-radius: 6px; 
+      -o-border-radius: 6px; 
+      -webkit-border-radius: 
+      6px; box-shadow: 0 5px 40px rgba(0, 0, 0, .16); 
+      -webkit-box-shadow: 0 5px 40px rgba(0, 0, 0, .16); 
+      -moz-box-shadow: 0 5px 40px rgba(0, 0, 0, .16); 
+      -o-box-shadow: 0 5px 40px rgba(0, 0, 0, .16)
+    }
+    .fb-credit{
+      text-align: center; 
+      margin-top: 8px
+    }
+    .fb-credit a{
+      transition: none; 
+      color: #bec2c9; 
+      font-family: Helvetica, Arial, sans-serif; 
+      font-size: 12px; 
+      text-decoration: none; 
+      border: 0; 
+      font-weight: 400
+    }
+    .ctrlq.fb-overlay{
+      z-index: 0; 
+      position: fixed; 
+      height: 100vh; 
+      width: 100vw; 
+      -webkit-transition: opacity .4s, visibility .4s; 
+      transition: opacity .4s, visibility .4s; 
+      top: 0; 
+      left: 0; 
+      background: rgba(0, 0, 0, .05); 
+      display: none
+    }
+    .ctrlq.fb-close{
+      z-index: 4; 
+      padding: 0 6px; 
+      background: #365899; 
+      font-weight: 700; 
+      font-size: 11px; 
+      color: #fff; 
+      margin: 8px; 
+      border-radius: 3px
+    }
+    .ctrlq.fb-close::after{
+      content: "X"; 
+      font-family: sans-serif
+    }
+    .bubble{
+      width: 20px; 
+      height: 20px; 
+      background: #c00; 
+      color: #fff; 
+      position: absolute; 
+      z-index: 999999999; 
+      text-align: center; 
+      vertical-align: middle; 
+      top: -2px; 
+      left: -5px; 
+      border-radius: 50%;
+    }
+    .bubble-msg{
+      width: 120px; 
+      left: -140px; 
+      top: 5px; 
+      position: relative; 
+      background: rgba(59, 89, 152, .8); 
+      color: #fff; 
+      padding: 5px 8px; 
+      border-radius: 8px; 
+      text-align: center; 
+      font-size: 13px;
+    }
+    </style>
+    <div class="fb-livechat"> 
+      <div class="ctrlq fb-overlay"></div>
+      <div class="fb-widget"> 
+        <div class="ctrlq fb-close"></div>
+        <div class="fb-page" data-href="https://www.facebook.com/bttu1225" data-tabs="messages" data-width="360" data-height="400" data-small-header="true" data-hide-cover="true" data-show-facepile="false"> </div>
+        <div class="fb-credit"> 
+          <a href="https://www.facebook.com/bttu1225" target="_blank" >Bùi Thị Thuy Uyên</a> 
+          <br>
+          
+        </div>
+        <div id="fb-root"></div>
+      </div>
+      <a href="https://m.me/bttu1225" title="Gửi tin nhắn cho chúng tôi qua Facebook" class="ctrlq fb-button"> 
+        <div class="bubble">1</div>
+        <div class="bubble-msg">Bạn cần hỗ trợ?</div>
+      </a>
+    </div>
+  <!-- <script src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9"></script> -->
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
+  <script>
+    jQuery(document).ready(function($){
+      function detectmob(){
+        if( navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/BlackBerry/i) || navigator.userAgent.match(/Windows Phone/i) )
+          {return true;}
+        else{return false;}
+      }
+      var t={delay: 125, overlay: $(".fb-overlay"), widget: $(".fb-widget"), button: $(".fb-button")}; 
+      setTimeout(function(){$("div.fb-livechat").fadeIn()}, 8 * t.delay); 
+      if(!detectmob()){
+        $(".ctrlq").on("click", function(e){
+          e.preventDefault(), t.overlay.is(":visible") ? (t.overlay.fadeOut(t.delay), t.widget.stop().animate({
+            bottom: 0, opacity: 0
+          }, 2 * t.delay, function(){
+            $(this).hide("slow"), t.button.show()
+          })) : t.button.fadeOut("medium", function(){
+            t.widget.stop().show().animate({bottom: "30px", opacity: 1}, 2 * t.delay), t.overlay.fadeIn(t.delay)
+          })})}});
+  </script>
+
+  <!-- scolltop -->
+  <script type="text/javascript">
+      $().ready(function() {
+          $(window).scroll(function() {
+              var top = $(this).scrollTop();
+              if (top > 100) {
+                  $("#top").fadeIn('slow');
+              } else {
+                  $("#top").fadeOut('slow');
+              }
+          });
+          $("#top").click(function() {
+              $("body").animate({
+                  scrollTop: 0
+              }, 1000);
+          });
+      });
+  </script>
+  <style type="text/css">
+      #top {
+          position: fixed;
+          right: 15px;
+          bottom: 90px;
+          display: none;
+      }
+  </style>
+  <a href="#chinh" id="top"><img src="images/sct.png" width="80px" title="Trở về đầu trang" /></a>
+
+  <script>
+  $(document).ready(function(){
+    // Add smooth scrolling to all links in navbar + footer link
+    $(".navbar a, a, footer a[href='#chinh']").on('click', function(event) {
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+
+        // Store hash
+        var hash = this.hash;
+
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 700, function(){
+     
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+      } // End if
+    });
+    
+    $(window).scroll(function() {
+      $(".slideanim").each(function(){
+        var pos = $(this).offset().top;
+
+        var winTop = $(window).scrollTop();
+          if (pos < winTop + 600) {
+            $(this).addClass("slide");
+          }
+      });
+    });
+  })
+</script>
+</body>
+</html>

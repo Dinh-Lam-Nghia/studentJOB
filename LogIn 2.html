@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="css/LogIn.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0\css\font-awesome.min.css">
+</head>
+
+<body>
+    <div class="hero">
+        
+        <div class="form-box">
+            <a href="index.html" class="fa-pull-right"style="font-size: 23px; text-decoration: none" title="Trở về trang chủ">
+                X
+            </a>
+            <center><b>Nhà tuyển dụng</b></center>
+            <div class="button-box">
+                <div id="btn"></div>
+                <button id="btn1" type="button" class="toogle-btn" onclick="login()">Đăng nhập</button>
+                <button id="btn2" type="button" class="toogle-btn" onclick="register()">Đăng ký</button>
+            </div>
+            <div class="social-icons">
+                <img src="images/fb.png">
+                <img src="images/gg.png">
+                <img src="images/tw.png">
+            </div>
+            <form id="login" class="input-group">
+                <input type="text" class="input-field" placeholder="Tên" required>
+                <input type="text" class="input-field" placeholder="Mật khẩu" required>
+                <input type="checkbox" class="chech-box"><span>Ghi nhớ mật khẩu</span> <br>
+                <a href="#"> Quên mật khẩu</a>
+                <button type="submit" class="submit-btn">Đăng nhập</button>
+                <br><br><br><br><br>
+                <a href="admin\login.html" target="_blank" style="text-decoration: none;"><p style="text-align: right;">Đăng nhập admin</p></a>
+            </form>
+            <form id="register" class="input-group">
+                <input type="text" class="input-field" placeholder="tên" required>
+                <input type="email" class="input-field" placeholder="Email" required>
+                <input type="text" class="input-field" placeholder="Nhập mật khẩu" required>
+                <input type="text" class="input-field" placeholder="Nhập lại mật khẩu" required>
+                <input type="checkbox" class="chech-box"><span>Tôi đồng ý với điều khoản & điều kiện</span>
+                <button type="submit" class="submit-btn">Đăng ký</button>
+            </form>
+        </div>
+    </div>
+    <script type="text/javascript" language="script">
+        var x = document.getElementById('login');
+        var y = document.getElementById('register');
+        var z = document.getElementById('btn');
+
+        function register() {
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            z.style.left = "110px";
+        }
+
+        function login() {
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left = "0px";
+        }
+    </script>
+</body>
+
+</html>
